@@ -43,4 +43,4 @@ def make_edge_smooth(img_size):
         cv2.imwrite(os.path.join(save_dir, file_name), gauss_img)
 
 
-make_edge_smooth(500)
+make_edge_smooth(1024)
