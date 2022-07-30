@@ -13,7 +13,7 @@ This repository give a slolution to change a real image to a cartoon-style image
   train.train()
   ```
  - Weights will be saved in _**weights**_ dir.
- ## Test
+## Test
  - Run _**test.py**_, or you can run this block:
   ```sh 
   from test import gen_pic2cartoon
