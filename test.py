@@ -1,13 +1,13 @@
 import numpy as np
 import cv2
 from models.generator import Generator
-SIZE = 256
 
-def gen_pic2cartoon(pic_path, cartoon_path):
-    model = Generator(SIZE).gmodel()
+
+def gen_pic2cartoon(pic_path, cartoon_path, size=256):
+    model = Generator(size).gmodel()
     model.load_weights("weights/first_save.h5")
     x = cv2.imread(pic_path)
-    x = cv2.resize(x, (SIZE, SIZE))
+    x = cv2.resize(x, (size, size))
     x = [x]
     x = np.array(x)
     x = x / 255.
