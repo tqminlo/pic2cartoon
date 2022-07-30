@@ -1,6 +1,7 @@
 # Change a photo to cartoon style
 ## Description
-This repository give a slolution to change a real image to a cartoon-style image.
+This repository give a slolution to change a real image to a cartoon-style image. </br>
+Model was trained with 6227 real images and 2582 cartoon images, with 10 epochs. This project is still collecting more data, fine-tuning and training to expect even better results.
 ## Process data for training
 - Put your real-images in _**dataset/trainA**_ dir and cartoon-images in _**dataset/trainB**_ dir. </br>
 - Run _**utils/get_smooth_imgs.py**_ to creat smooth-images from cartoon-images (default size of these squared-smooth images is 1024).
