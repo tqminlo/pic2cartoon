@@ -14,4 +14,14 @@ This repository give a slolution to change a real image to a cartoon-style image
   ```
  - Weights will be saved in _**weights**_ dir.
  ## Test
+ - Run _**test.py**_, or you can run this block:
+  ```sh 
+  from test import gen_pic2cartoon
+  # Choose train/test size, pic_path (input) and cartoon_path (output)
+  size = TRAIN_SIZE
+  pic_path = YOUR_INP_PIC_PATH
+  cartoon_path  = YOUR_OUT_CARTOON_PATH
+  gen_pic2cartoon(pic_path, cartoon_path, size)
+  ```
+ - Demo input and output of this project is in _**test_result**_ dir.
 
